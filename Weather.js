@@ -88,7 +88,13 @@ const clothesOption = {
   },
 };
 
-export default function Weather({ temp, condition, choice }) {
+export default function Weather({
+  temp,
+  temp_min,
+  temp_max,
+  condition,
+  choice,
+}) {
   return (
     <View style={styles.container}>
       <View style={styles.vacant}></View>
@@ -124,6 +130,8 @@ export default function Weather({ temp, condition, choice }) {
           loop
         />
       </LinearGradient>
+      <Text style={styles.temp_m}>최고온도 {temp_min}℃</Text>
+      <Text style={styles.temp_m}>최저온도 {temp_max}℃</Text>
       <View style={styles.halfContainer}>
         <Text style={styles.subtitle}>What to wear?</Text>
       </View>
@@ -162,6 +170,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   upperContainer: {
+    zIndex: 50,
     width: 350,
     height: 280,
     shadowColor: "#000",
@@ -177,6 +186,13 @@ const styles = StyleSheet.create({
   temp: {
     fontSize: 42,
     color: "white",
+  },
+  temp_m: {
+    fontSize: 20,
+    color: "red",
+    top: 190,
+    zIndex: 100,
+    position: "absolute",
   },
   halfContainer: {
     flexDirection: "row",
