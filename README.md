@@ -30,7 +30,7 @@ https://openweathermap.org/
 ## Lottie
 https://lottiefiles.com/
 
-##기능
+## 기능
 - [x] Open Api를 이용해서 온도, 최고온도, 최저온도, 습도 표시
 - [ ] 사용자의 성별에 따라 아이콘 변경
 - [ ] 텍스트 대신 이미지/ 아이콘으로 추천
