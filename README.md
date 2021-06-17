@@ -1,8 +1,8 @@
 # What-to-wear
 
 ## Idea
-### 🥼온도에 따라 어떤 옷을 입을지 알려주는 앱👖
-온도에 따라 아이콘, 화면 변경
+### 🥼Clothes recommend App👖
+App that recommends what clothes to wear depending on the temperature
 
 ## Expo Cli 설치 및 실행
 1. ```npm install -g expo-cli```
